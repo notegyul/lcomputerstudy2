@@ -1,4 +1,10 @@
 spring:
+  mvc:
+    view:
+      prefix: "/WEB-INF/views"
+      suffix: ".jsp"
+  
+  
   datasource:
     url: jdbc:mysql://localhost:3306/spring?characterEnoding=UTF-8&serverTimezone=UTC
     username: root
@@ -8,3 +14,25 @@ spring:
   session:
     jdbc:
       initialize-schema: always   
+      
+server:
+  port: 8080
+    
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+      
+    jsp:
+      init-parameters:
+        development: true
+    session:
+      timeout: 7200
+      
+  error:    
+       whitelabel:
+          enabled: false 
+        
+        
+          

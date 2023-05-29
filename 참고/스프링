@@ -1,4 +1,4 @@
-DispatcherServlet 는 FrontController 라고도 불리며 모든 컨트롤러는 DispatcherServlet을 통해 호출됨
+(1)DispatcherServlet 는 FrontController 라고도 불리며 모든 컨트롤러는 DispatcherServlet을 통해 호출됨
 톰캣 시작시 dispatcherServlet init() 호출
 톰캣 종료시 dispathcerServlet destroy() 호출
 요청 시 service()를 통해 dopost 나 doget 이 호출 됨
@@ -16,3 +16,23 @@ configuration, bean 어노테이션 학습
 mybatis를 사용하는 이유
 aop filter interceptor
 sprint security
+
+(2)
+메이븐 : https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client/3.1.2
+
+
+(3) build.gradle
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.2'
+	//runtimeOnly 'com.mysql:mysql-connector-j'
+	// https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client
+	implementation 'org.mariadb.jdbc:mariadb-java-client:3.1.2'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
+}
+---> mysql과 mariadb
+
+(4) compile -> implement로 변경 ; 구글에 maven repository <<<>>> 검색
