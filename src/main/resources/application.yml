@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring?characterEnoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 1234
+    driver-class-name: org.mariadb.jdbc.Driver
+  
+  session:
+    jdbc:
+      initialize-schema: always   

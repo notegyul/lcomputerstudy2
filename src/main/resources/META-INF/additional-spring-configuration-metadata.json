@@ -1,0 +1,27 @@
+{"properties": [
+  {
+    "name": "spring.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.password'"
+  },
+  {
+    "name": "spring.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.username'"
+  },
+  {
+    "name": "spring.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.url'"
+  },
+  {
+    "name": "spring.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.driver-class-name'"
+  },
+  {
+    "name": "session.jdbc.initialize-schema",
+    "type": "java.lang.String",
+    "description": "A description for 'session.jdbc.initialize-schema'"
+  }
+]}
